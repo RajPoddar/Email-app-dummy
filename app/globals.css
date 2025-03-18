@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --theme: #eaf4ff;
+  --white: white;
+  --link: #007bff;
+  --loginbtnblue: #0088D9;
+  --trialBlue: #0d2c6c;
+}
+
+body {
+  background-color: var(--theme);
+  /* Light blue background */
+}
+
+.line {
+  height: 2px;
+  background-color: #00000029;
+  margin: 0.1rem;
+  width: 45%;
+}
+
+
+.login-card {
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: var(--white);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  /* max-width: 900px; */
+  /* margin-bottom: 20px; */
+  padding: 1rem;
+}
+
+.login-btn {
+  background-color: var(--loginbtnblue);
+}
+
+.trial-button {
+  background-color: var(--trialBlue);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.trial-button:hover {
+  background-color: #091f4a;
+}
+
+.logo-container img {
+  max-height: 50px;
+}
+
+.login-container {
+  background-color: #eaf4ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 84vh;
+  /* min-height: 100vh; */
+}
+
+
+.password-box {
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  right: 8%;
+  top: 1.5vh;
+}
+
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  .login-card {
+    width: auto;
+  }
+}
+
+
+
+/* Navbar */
+.navbar-color {
+  background-color: var(--trialBlue);
+}
+
+
+.press-know-logo {
+  filter: brightness(0) invert(1);
+}
+
+.nav-link {
+  text-decoration: none !important;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-link:hover {
+  scale: 1.2;
+  color: #28c1f1 !important;
+  text-shadow: 0px 0px 13px #6239ff;
+
+}
+
+.active-link {
+  background: #ffffff;
+  color: #0d6efd !important;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+.custom-popover {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  z-index: 2000;
+  min-width: 180px;
+}
+
+.popover-item {
+  display: block;
+  padding: 8px 12px;
+  color: black;
+  text-decoration: none !important;
+  transition: all 0.2s;
+}
+
+.popover-item:hover {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+/* Popover Arrow */
+.popover-arrow {
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
