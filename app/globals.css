@@ -169,3 +169,74 @@ a:hover {
   transform: rotate(45deg);
   box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
 }
+
+
+/* Toolbar css for simple email template */
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button.active {
+  background-color: green;
+  color: white;
+}
+
+.color-dropdown {
+  position: relative;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.color-btn.active {
+  background-color: green;
+  color: white;
+}
+
+.color-palette {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(7, 20px);
+  gap: 5px;
+  background: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  top: 35px;
+  left: 0;
+  z-index: 100;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+.color-box:hover {
+  border: 2px solid black;
+}
+.strikethrough {
+  text-decoration: line-through;
+}
